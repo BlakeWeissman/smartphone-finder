@@ -15,19 +15,20 @@ export class Appbar extends Component {
   render() {
     return (
     <div>
-        <TopAppBar>
-          <TopAppBarRow>
-            <TopAppBarSection align='start'>
-              <TopAppBarIcon navIcon tabIndex={0}>
-                <MaterialIcon hasRipple icon='menu' onClick={() => console.log('click')}/>
-              </TopAppBarIcon>
-              <TopAppBarTitle>Smartphone Finder</TopAppBarTitle>
-            </TopAppBarSection>
-          </TopAppBarRow>
-        </TopAppBar>
+        <TopAppBar
+            title='Smartphone Finder '
+            short
+            navigationIcon={<MaterialIcon
+                icon='menu'
+                onClick={() => console.log('click')}
+            />}
+            actionItems={[
+                <MaterialIcon icon='file_download' />,
+                <MaterialIcon icon='print' />,
+                <MaterialIcon icon='bookmark' />,
+            ]}
+        />
     </div>
     );
   }
 }
-
-//export default Appbar;
