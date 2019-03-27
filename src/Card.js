@@ -7,13 +7,13 @@ export class Card extends Component {
         <div className="card text-center">
             <div className="card-wrap">
             <div className="card-image background-dark">
-                <a href={this.props.phoneLink} target="_blank"></a>
+                <a href={this.props.link} target="_blank"></a>
             </div>
             <div className="card-content">
-                <h2>{this.props.phoneName}</h2>
-                <p>{this.props.phoneDesc}</p>
-                <div class="button-wrap">
-                    <a class="button1" href={this.props.phoneLink} target="_blank">Learn More</a>
+                <h2>{this.props.name}</h2>
+                <p>{this.props.desc}</p>
+                <div className="button-wrap">
+                    <a className="button1" href={this.props.link} target="_blank">Learn More</a>
                 </div>
             </div>
             </div>
