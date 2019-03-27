@@ -63,7 +63,7 @@ a.button1 {
 a.button1:hover {
   color: #ffffff !important;
   background: #242424 !important;
-  border: 1px solid #242424;
+  border: 1px solid;
 }
 
 a.button2 {
@@ -119,6 +119,26 @@ div.app-header-wrap {
   margin-bottom: auto;
 }
 
+div.app-header-left {
+  margin-right: auto;
+}
+
+div.app-header-right {
+  margin-left: auto;
+}
+
+input.app-header-input {
+  width: 100%;
+  padding: 3px 5px;
+  line-height: 1.42857;
+  color: #ffffff;
+  background-color: #242424;
+  background-image: none;
+  border: 1px solid #ffffff;
+  border-radius: 0px;
+  font-size: 14px;
+}
+
 /*display*/
 div.app-display {
   padding-top: 105px;
@@ -161,4 +181,9 @@ h3.card-content {
 
 p.card-content {
   padding-bottom: 3px;
+}
+
+/*footer*/
+p.footer {
+  padding: 10px 0px;
 }

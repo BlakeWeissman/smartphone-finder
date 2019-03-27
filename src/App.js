@@ -7,18 +7,20 @@ class App extends Component {
     return (
       <div className="app">
         <div className="app-header background-dark">
-          <div className="wrap app-header-wrap">
-            <h2 className="color-light">Smartphone Finder Prototype </h2>
-            <p className="color-light">created by <a href="http://blakeweissman.com/" className="color-light" target="_blank">Blake Weissman</a></p>
+          <div className="wrap app-header-wrap flex">
+            <div className="app-header-left">
+              <h2 className="color-light">Smartphone Finder Prototype </h2>
+              <p className="color-light">created by <a href="http://blakeweissman.com/" className="color-light" target="_blank">Blake Weissman</a></p>
+            </div>
+            <div className="app-header-right">
+              <p className="color-light">Price:</p>
+              <input className="app-header-input" onChange={Result.update} />
+            </div>
           </div>
         </div>
-        <div className="app-display">
-          <Result />
-        </div>
+        <Result />
         <footer className="background-dark">
-          <div className="wrap">
-            <p className="color-light">footer</p>
-          </div>
+          <p className="footer color-light text-center">&copy;2019 <a href="http://blakeweissman.com/" className="color-light" target="_blank">Blake Weissman</a></p>
         </footer>
       </div>
     );
