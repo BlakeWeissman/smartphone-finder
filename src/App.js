@@ -11,11 +11,13 @@ class App extends Component {
     this.priceChange = this.priceChange.bind(this);
   }
 
+  //Function that runs if the price filter is changed
   priceChange(event) {
     let value = parseInt(document.getElementById("filter-price").value);
     if (isNaN(value) === false) {     
       this.setState({price: parseInt(document.getElementById("filter-price").value)});
-    } else {
+    } 
+    else {
       this.setState({price: 0});
     }
   }

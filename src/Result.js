@@ -10,6 +10,7 @@ export class Result extends Component {
         }
     }
 
+    //Function that determines if a card should render based on the price filter
     renderCard(arg) { 
         if (arg.price >= this.props.price) {
             return <Card name={arg.name} desc={arg.desc} link={arg.link} img={arg.img} price={arg.price} />; 
