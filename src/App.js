@@ -3,6 +3,23 @@ import "./App.css";
 import { Result } from "./Result.js";
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { 
+      price: 0
+    }
+    this.priceChange = this.priceChange.bind(this);
+  }
+
+  priceChange(event) {
+    let value = parseInt(document.getElementById("filter-price").value);
+    if (isNaN(value) === false) {     
+      this.setState({price: parseInt(document.getElementById("filter-price").value)});
+    } else {
+      this.setState({price: 0});
+    }
+  }
+
   render() {
     return (
       <div className="app">
@@ -14,11 +31,11 @@ class App extends Component {
             </div>
             <div className="app-header-right">
               <p className="color-light">Price:</p>
-              <input className="app-header-input" onChange={Result.update} />
+              <input className="app-header-input" id="filter-price" onChange={this.priceChange} />
             </div>
           </div>
         </div>
-        <Result />
+        <Result price={this.state.price} />
         <footer className="background-dark">
           <p className="footer color-light text-center">&copy;2019 <a href="http://blakeweissman.com/" className="color-light" target="_blank">Blake Weissman</a></p>
         </footer>

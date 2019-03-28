@@ -9,11 +9,18 @@ export class Result extends Component {
             phones: PhoneList
         }
     }
-    render() {      
+
+    renderCard(arg) { 
+        if (arg.price >= this.props.price) {
+            return <Card name={arg.name} desc={arg.desc} link={arg.link} img={arg.img} price={arg.price} />; 
+        }
+    }
+
+    render() {
         return (
             <div className="app-display wrap flex">
                 {this.state.phones.map((phone) =>
-                    <Card name={phone.name} desc={phone.desc} link={phone.link} img={phone.img} price={phone.price} />
+                    this.renderCard(phone)
                 )}
             </div>
         );

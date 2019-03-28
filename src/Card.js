@@ -11,7 +11,7 @@ export class Card extends Component {
                 </div>
                 <div className="card-content">
                     <h2 className="card-content">{this.props.name}</h2>         
-                    <h3 className="card-content">{this.props.price}</h3>
+                    <h3 className="card-content">{"$" + this.props.price}</h3>
                     <p className="card-content">{this.props.desc}</p>
                     <div className="button-wrap">
                         <a className="button1" href={this.props.link} target="_blank">Learn More</a>
