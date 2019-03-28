@@ -14,6 +14,16 @@ Created by Blake Weissman
   transition: 0.2s;
 }
 
+::selection {
+  background: #242424;
+  color: #ffffff;
+}
+
+::-moz-selection {
+  background: #242424;
+  color: #ffffff;
+}
+
 p {
   line-height: 22px;
   font-size: 14px;
