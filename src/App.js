@@ -28,7 +28,7 @@ class App extends Component {
         <div className="app-header background-dark">
           <div className="wrap app-header-wrap flex">
             <div className="app-header-left">
-              <h2 className="color-light">Smartphone Finder Prototype </h2>
+              <h2 className="color-light">Smartphone Finder Prototype TEST</h2>
               <p className="color-light">created by <a href="http://blakeweissman.com/" className="color-light buttonless" target="_blank">Blake Weissman</a></p>
             </div>
             <div className="app-header-right">
