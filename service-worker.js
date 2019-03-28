@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/smartphone-finder/precache-manifest.212ba3272491039246aee8ebbc63e8e7.js"
+  "/smartphone-finder/precache-manifest.3ab1a4203550c209e6855f422e5e5eeb.js"
 );
 
 workbox.clientsClaim();
