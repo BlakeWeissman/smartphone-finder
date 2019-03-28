@@ -29,7 +29,7 @@ class App extends Component {
           <div className="wrap app-header-wrap flex">
             <div className="app-header-left">
               <h2 className="color-light">Smartphone Finder Prototype </h2>
-              <p className="color-light">created by <a href="http://blakeweissman.com/" className="color-light" target="_blank">Blake Weissman</a></p>
+              <p className="color-light">created by <a href="http://blakeweissman.com/" className="color-light buttonless" target="_blank">Blake Weissman</a></p>
             </div>
             <div className="app-header-right">
               <p className="color-light">Price:</p>
@@ -39,7 +39,7 @@ class App extends Component {
         </div>
         <Result price={this.state.price} />
         <footer className="background-dark">
-          <p className="footer color-light text-center">&copy;2019 <a href="http://blakeweissman.com/" className="color-light" target="_blank">Blake Weissman</a></p>
+          <p className="footer color-light text-center">&copy;2019 <a href="http://blakeweissman.com/" className="color-light buttonless" target="_blank">Blake Weissman</a></p>
         </footer>
       </div>
     );

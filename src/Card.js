@@ -5,10 +5,11 @@ export class Card extends Component {
   render() {
     return (
         <div className="card text-center">
-            <div className="card-wrap">
-                <div className="card-image" style={{backgroundImage: "url(" + this.props.img + ")"}}>
-                    <a href={this.props.link} target="_blank"></a>
-                </div>
+            <div className="card-wrap">    
+                <a href={this.props.link} target="_blank">
+                    <div className="card-image" style={{backgroundImage: "url(" + this.props.img + ")"}}>
+                    </div>
+                </a>
                 <div className="card-content">
                     <h2 className="card-content">{this.props.name}</h2>         
                     <h3 className="card-content">{"$" + this.props.price}</h3>

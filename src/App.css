@@ -11,6 +11,7 @@ Created by Blake Weissman
   text-decoration: none;
   margin: 0;
   font-weight: 300;
+  transition: 0.2s;
 }
 
 p {
@@ -149,11 +150,14 @@ div.app-display {
 /*card*/
 div.card {
   width: 300px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   border: 1px solid #242424;
   margin-right: 30px;
   margin-bottom: 30px;
   height: 415px;
+}
+
+div.card:hover {
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 div.card-image {
@@ -165,7 +169,13 @@ div.card-image {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  border: 1px solid transparent;
 }
+
+div.card-image:hover {
+  border: 1px solid #242424;
+}
+
 
 div.card-wrap {
   margin: 15px 25px;
